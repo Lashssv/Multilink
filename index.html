@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links | Tu Nombre</title>
+    <style>
+        :root {
+            --bg-color: #0f0f11;
+            --card-bg: #1a1a1e;
+            --card-hover: #25252b;
+            --accent-color: #d4af37;
+            --text-color: #f0f0f0;
+            --subtext-color: #8a8a93;
+            --border-color: #2a2a30;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+
+        .profile-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .profile-bio {
+            font-size: 0.875rem;
+            color: var(--subtext-color);
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .link-card:hover {
+            background-color: var(--card-hover);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .footer-text {
+            margin-top: 32px;
+            font-size: 0.75rem;
+            color: var(--subtext-color);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="profile-img" src="https://via.placeholder.com/150" alt="Foto de perfil">
+        <h1 class="profile-name">TU NOMBRE</h1>
+        <p class="profile-bio">⚙️ Mechanical Engineering<br>⚡ Driven by logic. Built with steel.</p>
+
+        <div class="links-container">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="link-card">
+                💼 LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-card">
+                🛠️ Proyectos
+            </a>
+            <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="link-card">
+                🎧 Playlist Rock & Metal
+            </a>
+        </div>
+
+        <p class="footer-text">ENGINEERED BY TU NOMBRE</p>
+    </div>
+</body>
+</html>
